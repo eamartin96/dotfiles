@@ -1,0 +1,7 @@
+[user]
+	name = Edgar Martinez
+	email = eddmtz96@gmail.com
+[core]
+	editor = vim --nofork
+[init]
+	defaultBranch = main
