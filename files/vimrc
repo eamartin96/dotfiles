@@ -69,7 +69,8 @@ match Extra15Spaces /\s\+$/
 set hlsearch
 " Highlight search while writting
  set incsearch
-
+" Set italic text to comments
+highlight Comment cterm=italic
 " ---------------------------------------------------------------------
 " Status line options (Removed since using Powerline)
 " Format
