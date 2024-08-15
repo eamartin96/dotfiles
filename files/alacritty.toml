@@ -1,0 +1,26 @@
+[window]
+decorations = "None"
+opacity = 0.9
+blur = true
+dimensions = { columns = 130, lines = 35 }
+
+[font]
+normal = { family = "JetBrainsMonoNL", style = "Medium" }
+italic = { family = "JetBrainsMonoNL", style = "Italic" }
+bold = { family = "JetBrainsMonoNL", style = "Bold" }
+size = 14.0
+
+[cursor.style]
+shape = "Block"
+blinking = "Always"
+
+[cursor.vi_mode_style]
+shape = "Block"
+blinking = "Always"
+
+[cursor]
+blink_interval = 500
+blink_timeout = 0
+
+[mouse]
+hide_when_typing = true
