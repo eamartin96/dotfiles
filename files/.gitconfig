@@ -1,0 +1,19 @@
+[user]
+    email = eddmtz96@gmail.com
+    name = Edgar Martinez
+
+[alias]
+    last = log -1 HEAD # Show the last commit
+    unstage = reset HEAD --
+    tree = log --graph --decorate --all --pretty=format:\"%C(bold yellow)%h%Creset%C(auto)%d%Creset - %C(bold green)%an%Creset, %C(bold red)(%ar)%Creset : %s\"
+[core]
+    editor = vim --nofork
+
+[help]
+    autocorrect = 10
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = true
