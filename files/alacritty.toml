@@ -5,9 +5,9 @@ blur = true
 dimensions = { columns = 130, lines = 35 }
 
 [font]
-normal = { family = "JetBrainsMonoNL", style = "Medium" }
-italic = { family = "JetBrainsMonoNL", style = "Italic" }
-bold = { family = "JetBrainsMonoNL", style = "Bold" }
+normal = { family = "JetBrainsMono Nerd Font", style = "Medium" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
 size = 14.0
 
 [cursor.style]
