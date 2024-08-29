@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# ---------------- Alacritty ----------------
+mkdir "$HOME/.config/alacritty"
+ln -s "$PWD/alacritty.toml" "$HOME/.config/alacritty/alacritty.toml"
+
 # ---------------- Fonts ----------------
 curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz
 mkdir JetBrainsMono
