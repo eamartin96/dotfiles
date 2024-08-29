@@ -36,3 +36,8 @@ ln -s "$PWD/tmux.conf" "$HOME/.tmux.conf"
 
 # ---------------- Git ----------------
 ln -s "$PWD/.gitconfig" "$HOME/.gitconfig"
+
+# ---------------- Complements ----------------
+# colorls
+sudo dnf install -y ruby && sudo dnf install -y ruby-devel # Install Ruby
+gem install colorls

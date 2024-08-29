@@ -32,8 +32,15 @@ alias sudo='sudo -E'
 alias ..='cd ..'
 
 # ls
-alias ls='ls --color=auto'
-alias la='ls -lathr'
+#alias ls='ls --color=auto'
+#alias la='ls -lathr'
 
+# colorls
+alias ls='colorls'
+alias la='colorls -lA'
 # ------------------- Promt -------------------
 PS1="> "
+
+# ------------------- Colorls -------------------
+source $(dirname $(gem which colorls))/tab_complete.sh
+
