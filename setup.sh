@@ -20,3 +20,6 @@ for theme in "$vim_directory/colors"/*; do
 done
 # Import Status Line
 ln -s "$vim_directory/statusline.vim" "$HOME/.vim/statusline.vim"
+
+# ---------------- Tmux ----------------
+ln -s "$PWD/tmux.conf" "$HOME/.tmux.conf"
