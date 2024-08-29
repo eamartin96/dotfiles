@@ -27,3 +27,6 @@ ln -s "$vim_directory/statusline.vim" "$HOME/.vim/statusline.vim"
 
 # ---------------- Tmux ----------------
 ln -s "$PWD/tmux.conf" "$HOME/.tmux.conf"
+
+# ---------------- Git ----------------
+ln -s "$PWD/.gitconfig" "$HOME/.gitconfig"
