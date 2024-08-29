@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# ---------------- bashrc ----------------
+ln -s "$PWD/.bashrc" "$HOME/.bashrc"
+
+# ---------------- Dependencies ----------------
+sudo dnf install -y make && sudo dnf install -y gcc
+
 # ---------------- Alacritty ----------------
 mkdir "$HOME/.config/alacritty"
 ln -s "$PWD/alacritty.toml" "$HOME/.config/alacritty/alacritty.toml"
