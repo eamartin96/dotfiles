@@ -40,7 +40,7 @@ alias ls='colorls'
 alias la='colorls -lA'
 
 # cat
-alias cat='bat'
+alias cat='bat --style plain'
 # ------------------- Promt -------------------
 PS1="> "
 
