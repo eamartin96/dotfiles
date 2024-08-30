@@ -19,6 +19,10 @@ mv JetBrainsMono/JetBrainsMono*.ttf ~/.local/share/fonts/JetBrainsMono/
 fc-cache -v > /dev/null 2>&1
 rm -r JetBrainsMono*
 
+# ---------------- Fastfetch ----------------
+mkdir ~/.config/fastfetch
+ln -s "$PWD/fastfetch/config.jsonc" "$HOME/.config/fastfetch/config.jsonc"
+
 # ---------------- Vim editor ----------------
 vim_directory=$PWD/vim
 # Create .vim directory
@@ -48,3 +52,10 @@ ln -s "$PWD/.gitconfig" "$HOME/.gitconfig"
 # colorls
 sudo dnf install -y ruby && sudo dnf install -y ruby-devel # Install Ruby
 gem install colorls
+
+# fastfetch
+sudo dnf install -y fastfetch
+
+# ---------------- Init ----------------
+clear
+fastfetch
