@@ -56,6 +56,8 @@ gem install colorls
 # fastfetch
 sudo dnf install -y fastfetch
 
+# bat
+sudo dnf install -y bat
 # ---------------- Init ----------------
 clear
 fastfetch

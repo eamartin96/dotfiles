@@ -38,6 +38,9 @@ alias ..='cd ..'
 # colorls
 alias ls='colorls'
 alias la='colorls -lA'
+
+# cat
+alias cat='bat'
 # ------------------- Promt -------------------
 PS1="> "
 
