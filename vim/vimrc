@@ -105,3 +105,15 @@ call plug#end()
 
 " ------------------- Netrw config -------------------
 let g:netrw_winsize = 30 " Change the size of Netrw window
+
+" ------------------- Abbreviations -------------------
+" Function to load abreviations based on file type
+function! LoadAbbreviations()
+    let l:abbr_file = '~/.vim/abbreviations/' . &filetype . '.vim'
+    if filereadable(expand(l:abbr_file))
+        execute 'source' l:abbr_file
+    endif
+endfunction
+
+" Automatically load abbreviations when entering a buffer
+autocmd BufEnter * call LoadAbbreviations()

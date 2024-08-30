@@ -21,15 +21,22 @@ rm -r JetBrainsMono*
 
 # ---------------- Vim editor ----------------
 vim_directory=$PWD/vim
+# Create .vim directory
+mkdir "$HOME/.vim"
 
 ln -s "$vim_directory/vimrc" "$HOME/.vimrc"
 # Create links to themes
-mkdir "$HOME/.vim" "$HOME/.vim/colors"
+mkdir "$HOME/.vim/colors"
 for theme in "$vim_directory/colors"/*; do
     ln -s "$theme" "$HOME/.vim/colors/$(basename "$theme")"
 done
 # Import Status Line
 ln -s "$vim_directory/statusline.vim" "$HOME/.vim/statusline.vim"
+# Create lins to abbreviations
+mkdir "$HOME/.vim/abbreviations"
+for file in "$vim_directory/abbreviations"/*; do
+    ln -s "$file" "$HOME/.vim/abbreviations/$(basename "$file")"
+done
 
 # ---------------- Tmux ----------------
 ln -s "$PWD/tmux.conf" "$HOME/.tmux.conf"
