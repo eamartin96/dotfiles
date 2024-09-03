@@ -5,6 +5,7 @@ ln -s "$PWD/.bashrc" "$HOME/.bashrc"
 
 # ---------------- Dependencies ----------------
 sudo dnf install -y make && sudo dnf install -y gcc
+sudo dnf install -y ruby && sudo dnf install -y ruby-devel # Install Ruby
 
 # ---------------- Alacritty ----------------
 mkdir "$HOME/.config/alacritty"
@@ -50,8 +51,9 @@ ln -s "$PWD/.gitconfig" "$HOME/.gitconfig"
 
 # ---------------- Complements ----------------
 # colorls
-sudo dnf install -y ruby && sudo dnf install -y ruby-devel # Install Ruby
-gem install colorls
+mkdir -p ~/Desktop/.gem/colorls
+GEM_HOME=$HOME/Desktop/.gem
+gem install colorls --install-dir $GEM_HOME/colors
 
 # fastfetch
 sudo dnf install -y fastfetch

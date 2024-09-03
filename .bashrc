@@ -46,4 +46,4 @@ PS1="> "
 
 # ------------------- Colorls -------------------
 source $(dirname $(gem which colorls))/tab_complete.sh
-
+export PATH="$HOME/Desktop/.gem/colorls/bin:$PATH"
