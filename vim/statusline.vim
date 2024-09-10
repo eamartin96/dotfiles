@@ -17,6 +17,8 @@ set statusline+=%v                     " Column number
 set statusline+=\/                     " Column number
 set statusline+=%{LinePercent()}       " Total number of lines
 
+" ------------------- Colors -------------------
+hi statusline guibg=#33ff8a guifg=#121212
 " ------------------- Custom Functions -------------------
 " -- Show Line Percentage
 function! LinePercent()
