@@ -4,8 +4,6 @@ set statusline+=\[%{CurrentMode()}\]   " Current mode
 set statusline+=\                      " A space
 set statusline+=%f                     " Full file path, at most 40 characters
 set statusline+=\                      " A space
-set statusline+=%y                     " Filetype
-set statusline+=\                      " A space
 set statusline+=%m                     " Modified flag [+]
 set statusline+=\                      " A space
 
