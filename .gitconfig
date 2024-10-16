@@ -3,7 +3,21 @@
     unstage = reset HEAD --
     tree = log --graph --decorate --all --pretty=format:\"%C(bold yellow)%h%Creset%C(auto)%d%Creset - %C(bold green)%an%Creset, %C(bold red)(%ar)%Creset : %s\"
 [core]
-    editor = vim --nofork
+    editor = nvim
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true    # use n and N to move between diff sections
+	dark = true
+
+[merge]
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = default
 
 [help]
     autocorrect = 10
@@ -13,3 +27,10 @@
 
 [pull]
     rebase = true
+
+[user]
+    name = Edgar Martinez
+    email = eddmtz96@gmail.com
+
+[includeIf "gitdir:~/Development/Intel/"]
+    path = ~/.gitconfig-work
