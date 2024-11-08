@@ -44,6 +44,7 @@ for file in "$vim_directory/abbreviations"/*; do
 done
 
 # ---------------- Tmux ----------------
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ln -s "$PWD/tmux.conf" "$HOME/.tmux.conf"
 
 # ---------------- Git ----------------
