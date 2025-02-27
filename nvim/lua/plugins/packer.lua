@@ -22,4 +22,11 @@ return require('packer').startup(function(use)
   }
   use 'voldikss/vim-floaterm' -- Float terminal
   use 'catppuccin/nvim'
+  use {
+    "windwp/nvim-autopairs", -- Auto bracet pair
+    event = "InsertEnter",
+    config = function()
+        require("nvim-autopairs").setup {}
+    end
+  }
 end)
