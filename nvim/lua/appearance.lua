@@ -5,7 +5,7 @@ local cmd = vim.cmd
 local api = vim.api
 
 -- default colorscheme
-cmd([[ colorscheme catppuccin-mocha ]])
+cmd([[ colorscheme onedark ]])
 
 -- transparent background
 cmd([[ hi normal guibg=NONE ]])

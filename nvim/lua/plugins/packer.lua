@@ -21,7 +21,6 @@ return require('packer').startup(function(use)
       requires = { 'nvim-lua/plenary.nvim' }
   }
   use 'voldikss/vim-floaterm' -- Float terminal
-  use 'catppuccin/nvim'
   use {
     "windwp/nvim-autopairs", -- Auto bracet pair
     event = "InsertEnter",
@@ -29,4 +28,8 @@ return require('packer').startup(function(use)
         require("nvim-autopairs").setup {}
     end
   }
+
+  -- Themes
+  use 'catppuccin/nvim'
+  use 'olimorris/onedarkpro.nvim'
 end)

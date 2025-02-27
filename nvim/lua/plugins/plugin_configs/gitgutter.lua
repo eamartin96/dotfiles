@@ -2,7 +2,7 @@
 -- author: Edgar Martinez
 
 -- set gitgutter sign column background to transparent
-vim.cmd('highlight SignColumn ctermbg=NONE')
+vim.cmd('highlight SignColumn ctermbg=NONE guibg=NONE')
 
 -- set the dealy in milliseconds before updating the signs
 vim.g.gitgutter_update_debounce = 10
