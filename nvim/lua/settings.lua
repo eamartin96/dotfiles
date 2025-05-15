@@ -31,3 +31,13 @@ opt.colorcolumn="80"
 
 -- disable editorconfig
 g.editorconfig = false
+
+-- open a file in the same line when closed it
+vim.api.nvim_create_autocmd("BufReadPost", {
+    pattern = {"*"},
+    callback = function()
+        if vim.fn.line("'\"") > 1 and vim.fn.line("'\"") <= vim.fn.line("$") then
+            vim.api.nvim_exec("normal! g'\"",false)
+        end
+    end
+})
