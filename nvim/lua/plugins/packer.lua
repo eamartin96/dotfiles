@@ -28,6 +28,12 @@ return require('packer').startup(function(use)
         require("nvim-autopairs").setup {}
     end
   }
+  use {
+      'xiyaowong/transparent.nvim',
+      config = function()
+          require("plugins.plugin_configs.transparent")
+      end
+  }
 
   -- Themes
   use 'catppuccin/nvim'
