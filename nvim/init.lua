@@ -8,4 +8,3 @@ require('appearance')
 
 -- plugins
 require('plugins/packer')
-require('nvim-tree').setup()

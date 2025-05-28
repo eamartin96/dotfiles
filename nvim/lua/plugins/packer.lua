@@ -8,7 +8,10 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use {
       'nvim-tree/nvim-tree.lua', -- File sidebar tree
-      requires = { 'nvim-tree/nvim-web-devicons' }
+      requires = { 'nvim-tree/nvim-web-devicons' },
+      config = function()
+          require('plugins.plugin_configs.nvim-tree').setup()
+      end
   }
   use {
 	  'airblade/vim-gitgutter',	-- Git gutter
