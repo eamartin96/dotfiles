@@ -15,3 +15,9 @@ cmd('highlight LineNr ctermbg=NONE guibg=NONE')
 
 -- make CursorLineNr (current line number) transparent
 cmd('highlight CursorLineNr ctermbg=NONE guibg=NONE')
+
+-- customize line numbers
+api.nvim_set_hl(0, 'LineNr', {
+    fg = '#89b4fa',
+    bold = true
+})
